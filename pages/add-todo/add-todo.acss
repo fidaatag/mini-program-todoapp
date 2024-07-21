@@ -1,0 +1,5 @@
+.page-add-todo {
+  max-width: fit-content;
+  margin: auto;
+  text-align: center;
+}

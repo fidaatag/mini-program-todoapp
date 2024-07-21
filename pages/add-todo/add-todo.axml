@@ -1,0 +1,12 @@
+<view class="page-add-todo">
+  <view>
+    <input 
+      placeholder="What needs to be done?"
+      onBlur="onBlur"
+      value="{{inputValue}}"
+    />
+  </view>
+  <view>
+    <button size="default" type="primary" onTap="add">Button</button>
+  </view>
+</view>

@@ -1,0 +1,20 @@
+<view class="page-todos">
+  <view class="user">
+    <image class="avatar" src="{{user.image}}" background-size="cover"></image>
+    <view class="nickname">{{user.firstName}}'s Todo List</view>
+  </view>
+  <view class="todo-items">
+    <checkbox-group class="todo-items-group" onChange="onTodoChanged">
+      <label class="todo-item" a:for="{{todos}}">
+        <view>
+          <checkbox value="{{item.text}}" checked="{{item.completed}}" />
+          <text class="{{item.completed ? 'checked' : ''}}">{{item.text}}</text>
+        </view>
+        <button size="mini" onTap="delete" data-id={{item.id}}>🗑️</button>
+      </label>
+    </checkbox-group>
+    <view>
+      <button type="primary" onTap="addTodo">Add Todo</button>
+    </view>
+  </view>
+</view>
